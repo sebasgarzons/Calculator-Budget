@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator Budget</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<link href="custom.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div class="container_prncpl">
+
+		<div>
+
+			<form id="table_1" class="cont_grid">
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<th>Departamento</th>
+								<th>Cargo</th>
+								<th>Coste Por</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Marketing</td>
+								<td class="charge">Community Manager</td>
+								<td><input type="number" id="cost1_t1"></input></td>
+							</tr>
+							<tr>
+								<td>Marketing</td>
+								<td class="charge">Community Manager</td>
+								<td><input type="number" id="cost2_t1"></input></td>
+							</tr>
+							<tr>
+								<td>Marketing</td>
+								<td class="charge">Content Manager</td>
+								<td><input type="number" id="cost3_t1"></input></td>
+							</tr>
+							<tr>
+								<td>Marketing</td>
+								<td class="charge">Director de Marketing</td>
+								<td><input type="number" id="cost4_t1"></input></td>
+							</tr>
+							<tr>
+								<td>Marketing</td>
+								<td class="charge">Ejecutiva de Cuentas</td>
+								<td><input type="number" id="cost5_t1"></input></td>
+							</tr>
+							<tr>
+								<td>Publicidad</td>
+								<td class="charge">Gestor de Publicidad</td>
+								<td><input type="number" id="cost6_t1"></input></td>
+							</tr>
+							<tr>
+								<td>Publicidad</td>
+								<td class="charge">Analista de Publicidad</td>
+								<td><input type="number" id="cost7_t1"></input></td>
+							</tr>
+							<tr>
+								<td>Diseño y Vídeo</td>
+								<td class="charge">Diseñador Gráfico</td>
+								<td><input type="number" id="cost8_t1"></input></td>
+							</tr>
+							<tr>
+								<td>Diseño y Vídeo</td>
+								<td class="charge">Editor de Vídeos</td>
+								<td><input type="number" id="cost9_t1"></input></td>
+							</tr>
+							<tr>
+								<td>Relaciones Públicas</td>
+								<td class="charge">Responsable de RRPP</td>
+								<td><input type="number" id="cost10_t1"></input></td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<div>
+					<!-- <table id="table_1"> -->
+					<table id="form_total_hours_t1">
+						<thead>
+							<tr>
+								<th>Días</th>
+								<th>Horas</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="number" id="day1_t1" type="number"></input></td>
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour1_t1" type="number" ></input></td>
+							</tr>
+							<tr>
+								<td><input type="number" id="day2_t1"></input></td>
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour2_t1"></input></td>
+							</tr>
+							<tr>
+								<td><input type="number" id="day3_t1"></input></td>
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour3_t1"></input></td>
+							</tr>
+							<tr>
+								<td><input type="number" id="day4_t1"></input></td>
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour4_t1"></input></td>
+							</tr>
+							<tr>
+								<td><input type="number" id="day5_t1"></input></td>
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour5_t1"></input></td>
+							</tr>
+							<tr>
+								<td><input type="number" id="day6_t1"></input></td>
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour6_t1"></input></td>
+							</tr>
+							<tr>
+								<td><input type="number" id="day7_t1"></input></td>
+								<!-- <td id="set"><input></input></td> -->
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour7_t1"></input></td>
+							</tr>
+							<tr>
+								<td><input type="number" id="day8_t1"></input></td>
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour8_t1"></input></td>
+							</tr>
+							<tr>
+								<td><input type="number" id="day9_t1"></input></td>
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour9_t1"></input></td>
+							</tr>
+							<tr>
+								<td><input type="number" id="day10_t1"></input></td>
+								<td><input type="number" value=0 name="hour" class="get_hour" id="hour10_t1"></input></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr class="tr_none">
+								<th class="none"></th>
+								<th>Tota Horas</th>
+							</tr>
+							<tr class="tr_none">
+								<td class="none"></td>
+								<td class="ttl_vl" id="total_hours_t1"></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div>
+					<!-- <form id="form_1"> -->
+					<table id="total_all_t1">
+						<thead>
+							<tr>
+								<th>Total Perfil</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td id="set_ttl_prfl1">
+									<!-- <input type="number" id="test" name="first" </input> -->
+									0
+								</td>
+							</tr>
+							<tr>
+								<td id="set_ttl_prfl2">
+									<!-- <input type="number" name="second" </input> -->
+									0
+								</td>
+							</tr>
+							<tr>
+								<td id="set_ttl_prfl3">8</td>
+							</tr>
+							<tr>
+								<td id="set_ttl_prfl4">10</td>
+							</tr>
+							<tr>
+								<td id="set_ttl_prfl5">0</td>
+							</tr>
+							<tr>
+								<td id="set_ttl_prfl6">0</td>
+							</tr>
+							<tr>
+								<td id="set_ttl_prfl7">0</td>
+							</tr>
+							<tr>
+								<td id="set_ttl_prfl8">0</td>
+							</tr>
+							<tr>
+								<td id="set_ttl_prfl9">0</td>
+							</tr>
+							<tr>
+								<td id="set_ttl_prfl10">0</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>Total para</th>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</form>
+
+		</div>
+
+		<div class="cont_budget">
+			<section class="sect_1">
+				<div>
+					<table class="style_data">
+						<tr>
+							<th>Nombre Empresa</th>
+							<td>vilma@email.com</td>
+						</tr>
+						<tr>
+							<th>Teléfono</th>
+							<td>Vivi</td>
+						</tr>
+						<tr>
+							<th>CIF</th>
+							<td>B7728483N</td>
+						</tr>
+						<tr>
+							<th>Dirección Física</th>
+							<td>Roselina</td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table class="adjust_table_match_height">
+						<tr>
+							<th colspan="2">Número de Presupuesto</th>
+						</tr>
+						<tr>
+							<td colspan="2">2018-01-0001</td>
+						</tr>
+						<tr>
+							<th>Presupuesto</th>
+							<th>Presupuesto</th>
+						</tr>
+						<tr>
+							<td>23/03/2018</td>
+							<td>30 días</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			<section class="sect_2">
+				<table>
+					<tr>
+						<h6>Datos del Cliente</h6>
+					</tr>
+					<tr>
+						<th>Nombre Empresa</th>
+						<th>Nombre</th>
+						<th>Apellido</th>
+						<th>CIF/EIN/</th>
+						<th>Dirección Física</th>
+					</tr>
+					<tr>
+						<td>5 Villas</td>
+						<td>Roselina</td>
+						<td>Castagna</td>
+						<td>D1243586N</td>
+						<td>Calle Pelo #11</td>
+					</tr>
+				</table>
+			</section>
+			<section class="sect_3">
+				<table>
+					<tr>
+						<h6>Presupuesto Servicios</h6>
+					</tr>
+					<tr>
+						<th>ID Servicio</th>
+						<th>Nombre de Servicio</th>
+						<th>Breve Descripción del Servicio</th>
+						<th>Duración del Servicio</th>
+						<th>Precio Final del Servicio</th>
+					</tr>
+					<tr>
+						<td>SM03</td>
+						<td>Gestión de Campañas de Publicidad en todas las redes sociales</td>
+						<td>Escribir texto descriptivo</td>
+						<td>Escribir # de semanas</td>
+						<td><input type="number"></input></td>
+					</tr>
+					<tr>
+						<td>DG01</td>
+						<td>Diseño gráfico para redes sociales</td>
+						<td>Escribir texto descriptivo</td>
+						<td>Escribir # de semanas</td>
+						<td><input type="number"></input></td>
+					</tr>
+					<tr>
+						<td>MD03</td>
+						<td>Plan de Publicidad</td>
+						<td>Escribir texto descriptivo</td>
+						<td>Escribir # de semanas</td>
+						<td><input type="number"></input></td>
+					</tr>
+					<tr class="tr_none">
+						<td class="none"></td>
+						<td class="none"></td>
+						<td class="none"></td>
+						<th>Total Servicios</th>
+						<td class="ttl_vl"></td>
+					</tr>
+				</table>
+			</section>
+			<section class="sect_4">
+				<table>
+					<tr>
+						<h6>Presupuesto por Inversiones & Herramientas</h6>
+					</tr>
+					<tr>
+						<th>Inversión/Herramienta</th>
+						<th>Descripción</th>
+						<th>Precio Mensual</th>
+						<th>Comisión</th>
+						<th>Precio Final</th>
+					</tr>
+					<tr>
+						<td>Inversión FB Ads</td>
+						<td>Inversión en campañas de anuncios</td>
+						<td><input></input></td>
+						<td><input></input></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>LeadsBridge</td>
+						<td>Plataforma para sincronizar leds</td>
+						<td><input></input></td>
+						<td><input></input></td>
+						<td>0</td>
+					</tr>
+					<tr class="tr_none">
+						<td class="none"></td>
+						<td class="none"></td>
+						<td class="none"></td>
+						<th>Total Inversión y Herramientas</th>
+						<td class="ttl_vl">0</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h6>Total Presupuesto</h6>
+				<div class="sect_5">
+					<div>
+						<table>
+							<tr>
+								<th>Método de Pago</th>
+								<td>Transferencia Bancaria IBAN-000-000-000-000</td>
+							</tr>
+							<tr class="row_space"></tr>
+							<tr>
+								<th rowspan="2">Aceptación presupuesto</th>
+								<td>Firma cliente</td>
+							</tr>
+							<tr>
+								<td>Fecha aceptación</td>
+							</tr>
+						</table>
+					</div>
+					<div>
+						<table>
+							<tr>
+								<th>Sub total primer mes</th>
+								<td>0</td>
+							</tr>
+							<tr>
+								<th>Impuestos (7%)</th>
+								<td>7</td>
+							</tr>
+							<tr>
+								<th>Total Primer Mes</th>
+								<td>0</td>
+							</tr>
+							<tr class="row_space"></tr>
+							<tr>
+								<th>Sub total próximos meses</th>
+								<td>0</td>
+							</tr>
+							<tr>
+								<th>Impuestos (7%)</th>
+								<td>7</td>
+							</tr>
+							<tr>
+								<th>Total próximos meses</th>
+								<td>0</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</div>
+	<script src="custom.js"></script>
+</body>
+
+
+
+<!-- Como puedo hacer que aunque cree una nueva row, con solo dos elementos, me los alinee a la derecha de la tabla, 
+que queden ambos al final, en las últimas dos columnas. Método alternativo a esconder tds. -->

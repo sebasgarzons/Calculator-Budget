@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Open-Sans-Regular';
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 8px;
+    background-color: rgb(239, 242, 250);
+}
+
+.container_prncpl{
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    padding: 82px 0px;
+}
+
+.cont_grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    gap: 20px;
+    border: 1px solid transparent;
+}
+
+.cont_grid div{
+
+}
+
+.cont_grid div table, .cont_budget div table, .cont_budget section table{
+    width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    font-family: Open-Sans-Regular;
+}
+
+.cont_grid div table th, .cont_budget div table th, .cont_budget section table th{
+    background-color: #4c78af;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.cont_grid div table td, .cont_budget div table td, .cont_budget section table td{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.charge{
+    text-align: left !important;
+}
+
+tr{
+    background-color: white;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.none{
+    background-color: transparent !important;
+    color: initial !important;
+    text-align: initial !important;
+    padding-left: initial !important;
+    padding-right: initial !important;
+    padding-top: initial !important;
+    padding-bottom: initial !important;
+    text-align: initial !important;
+    border: none !important;
+}
+
+.tr_none{
+    background-color: transparent !important;
+}
+
+.ttl_vl{
+    background-color: white;
+}
+
+.cont_budget{
+    margin-top: 22px;
+}
+
+.cont_budget .sect_1, .cont_budget .sect_5{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont_budget .sect_1 div, .cont_budget .sect_5 div{
+    width: 40%;
+    justify-content: space-between;
+}
+
+.sect_5{
+    align-items: start;
+}
+
+.sect_5 div table th, .style_data th{
+    width: 40%;
+    text-align: left !important;
+}
+
+.row_space{
+    margin: 12px 0;
+}
+
+.adjust_table_match_height td{
+    
+}
+
+.adjust_table_match_height th{
+
+}
+
